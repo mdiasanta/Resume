@@ -17,4 +17,15 @@ export class NavbarComponent {
     
   constructor(private breakpointObserver: BreakpointObserver) {}
   
+    resumeClick(){
+      window.open('https://resume.creddle.io/resume/el3x9rfvib7','_blank');
+    }
+
+    linkedinClick(){
+      window.open('https://www.linkedin.com/in/mark-diasanta-42ab68130/','_blank');
+    }
+
+    githubClick(){
+      window.open('https://github.com/mdiasanta','_blank');
+    }
   }

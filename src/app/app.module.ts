@@ -7,10 +7,28 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
 
+import { DomSanitizer } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+/*
+From the latest master, HttpClientModule is required instead
+import { HttpClientModule } from '@angular/common/http';
+*/
+import { MatIconRegistry } from '@angular/material';
+
+import{RouterModule} from '@angular/router';
+import { AboutComponent } from './about/about.component';
+import { ResumeComponent } from './resume/resume.component';
+import { HomeComponent } from './home/home.component';
+
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    AboutComponent,
+    ResumeComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -20,9 +38,27 @@ import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, Mat
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    
+    HttpClientModule,
+
+    PdfViewerModule,
+
+    RouterModule.forRoot([
+      {path:'home', component:HomeComponent} ,
+      {path:'about', component:AboutComponent} ,
+      {path:'resume', component:ResumeComponent}/*,
+      {path:'', component:LinkedInComponent}
+      {path:'', component:GitHubComponent} */
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+
+  constructor(matIconRegistry: MatIconRegistry, domSanitizer: DomSanitizer){
+    matIconRegistry.addSvgIconSet(domSanitizer.bypassSecurityTrustResourceUrl('./assets/mdi.svg')); // Or whatever path you placed mdi.svg at
+    //http://materialdesignicons.com/
+  }
+}

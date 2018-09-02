@@ -8,10 +8,21 @@
     [opened]="!(isHandset$ | async)">
     <mat-toolbar color="primary">Main Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">About Me</a>
-      <a mat-list-item href="#">Resume</a>
-      <a mat-list-item href="#">LinkedIn</a>
-      <a mat-list-item href="#">GitHub</a>
+        <a mat-list-item routerLink="/home">
+          <mat-icon svgIcon="home"></mat-icon>Home
+        </a>
+      <a mat-list-item routerLink="/about">
+        <mat-icon svgIcon="account-circle"></mat-icon>About Me
+      </a>
+      <a mat-list-item href="/resume" (click)="resumeClick()">
+        <mat-icon svgIcon="briefcase"></mat-icon> Resume
+      </a>
+      <a mat-list-item routerLink="/home" (click)="linkedinClick()">
+        <mat-icon svgIcon="linkedin-box"></mat-icon> LinkedIn
+      </a>
+      <a mat-list-item routerLink="/home"  (click)="githubClick()">
+        <mat-icon svgIcon="github-box"></mat-icon> GitHub
+      </a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -24,16 +35,16 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
+      <a routerLink="/home"><img src="assets/img/bape.png" height="50" width="50"></a>
       <span>Mark Diasanta</span>
     </mat-toolbar>
-    <!-- Add Content Here -->
+    <!-- Begin Content -->
     <div class="hero-image">
-      The Bapes are calling
-      <div class="hero-text">
-        <h1>Mark Diasanta</h1>
-        <p>Advising Systems Specialist</p>
-        <button>Hire me</button>
-      </div>
+        <div class="hero-text">
+            <router-outlet></router-outlet>
+        </div>
     </div>
+     
+    
   </mat-sidenav-content>
 </mat-sidenav-container>
