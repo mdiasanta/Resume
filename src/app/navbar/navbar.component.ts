@@ -18,7 +18,7 @@ export class NavbarComponent {
   constructor(private breakpointObserver: BreakpointObserver) {}
   
     resumeClick(){
-      window.open('https://resume.creddle.io/resume/el3x9rfvib7','_blank');
+      window.open('/assets/Resume.pdf','_blank');
     }
 
     linkedinClick(){

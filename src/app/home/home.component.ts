@@ -11,5 +11,9 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
   }
+  clickMessage = '';
 
+  onClickMe() {
+    this.clickMessage = 'Just Kidding, This button does not do anything.';
+  }
 }

@@ -6,16 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
-
-  constructor() { }
+  
+  constructor() { 
+  }
 
   ngOnInit() {
   }
 
-  clickMessage = '';
-
-  onClickMe() {
-    this.clickMessage = 'Wow, Really?';
-  }
+  
 
 }

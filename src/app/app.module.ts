@@ -45,6 +45,7 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     PdfViewerModule,
 
     RouterModule.forRoot([
+      { path: '', redirectTo: 'home', pathMatch: 'full' },
       {path:'home', component:HomeComponent} ,
       {path:'about', component:AboutComponent} ,
       {path:'resume', component:ResumeComponent}/*,
