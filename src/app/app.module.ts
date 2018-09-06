@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule,MatTooltipModule } from '@angular/material';
 
 import { DomSanitizer } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
@@ -19,8 +19,7 @@ import{RouterModule} from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { ResumeComponent } from './resume/resume.component';
 import { HomeComponent } from './home/home.component';
-
-/* import { PdfViewerModule } from 'ng2-pdf-viewer'; */
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -39,10 +38,11 @@ import { HomeComponent } from './home/home.component';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
+
+    MatCardModule,
     
     HttpClientModule,
-
-    /* PdfViewerModule, */
+    MatTooltipModule,
 
     RouterModule.forRoot([
       { path: '', redirectTo: 'home', pathMatch: 'full' },
