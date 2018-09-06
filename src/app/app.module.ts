@@ -20,7 +20,7 @@ import { AboutComponent } from './about/about.component';
 import { ResumeComponent } from './resume/resume.component';
 import { HomeComponent } from './home/home.component';
 
-import { PdfViewerModule } from 'ng2-pdf-viewer';
+/* import { PdfViewerModule } from 'ng2-pdf-viewer'; */
 
 @NgModule({
   declarations: [
@@ -42,7 +42,7 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     
     HttpClientModule,
 
-    PdfViewerModule,
+    /* PdfViewerModule, */
 
     RouterModule.forRoot([
       { path: '', redirectTo: 'home', pathMatch: 'full' },
