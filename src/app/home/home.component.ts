@@ -12,6 +12,12 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
   clickMessage = '';
+  visible=false;
+
+  toggleCard(){
+
+    this.visible=!this.visible;
+  }
 
   onClickMe() {
     this.clickMessage = 'Just Kidding, This button does not do anything.';

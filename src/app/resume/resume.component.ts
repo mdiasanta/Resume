@@ -12,5 +12,9 @@ export class ResumeComponent implements OnInit {
   ngOnInit() {
   }
 
+  openResume(){
+    window.open('https://resume.creddle.io/resume/el3x9rfvib7','_blank');
+    
+  }
   pdfSrc: string = './assets/Resume.pdf';
 }

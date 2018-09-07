@@ -20,6 +20,8 @@ import { AboutComponent } from './about/about.component';
 import { ResumeComponent } from './resume/resume.component';
 import { HomeComponent } from './home/home.component';
 import {MatCardModule} from '@angular/material/card';
+import { trigger, style, transition, animate, group }
+    from '@angular/animations';
 
 @NgModule({
   declarations: [

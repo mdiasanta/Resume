@@ -1,35 +1,33 @@
 
-    <div class="hero-text">
-        <img src="assets/img/photo.jpg" class="Avatar">
-      <h1>Mark Diasanta</h1>
-      <p>Advising Systems Specialist</p>
-      
-      <button mat-raised-button color="primary" matTooltip="Please!" (click)="onClickMe()">Hire me</button>
-      <div>{{clickMessage}}</div>
+<div class="hero-text">
+  <img src="assets/img/photo.jpg" class="Avatar">
+  <h1>Mark Diasanta</h1>
+  <p>Advising Systems Specialist</p>
+  
+  <button mat-raised-button color="primary" matTooltip="Please!" (click)="toggleCard()">Hire me</button>
+  <div>{{clickMessage}}</div>
 
-      <!-- <div layout="row">
+  <br>
 
-          <div flex>
-            <u><h2 class="subtext">About me</h2></u>
-            <p class="subtext">
-            I am currently a CRM Administrator with 1.5 years of experience in Web Development and Software development.<br><br>
-            While I am a CRM Administarator by title, I've taken on development roles to extend our organization's CRM functionality. 
-            I've developed Web resources, Libraries, Console applications, and assisted in supporting our internal Angular app which all aid in our organization's productivity.
-            <br><br>
-            I enjoy the automation aspects of a good piece of software as well as the visual appeal of a dynamic application. 
-            Given adequate time, I enjoy solving problems 
-            <br><br>
-            I currently live in Virginia Beach, Virginia, but my dream is to work in Japan
-            </p>
-        </div>
+  <div class="fade" *ngIf="visible">   
+    <mat-card >
+      <!-- <mat-card-img>
 
-        <div flex>
-          <u><h2 class="subtext">Interests</h2></u>
-          <p class="subtext">
-          I enjoy modifying cars, playing videogames, and indulging myself in Anime.
-          </p>
-        </div>
-
-      </div> -->
-      
-    </div>
+      </mat-card-img> -->
+      <mat-card-title>
+        Contact Informtation
+      </mat-card-title>
+        <mat-card-subtitle>Email Address</mat-card-subtitle>
+          <mat-card-content>
+            markdiasanta@gmail.com
+          </mat-card-content>
+        <mat-card-subtitle>Phone Number</mat-card-subtitle>
+          <mat-card-content>
+            +1-757-351-5443
+          </mat-card-content>
+          <mat-card-content>
+              Email is the best way to get in touch, so don't be shy!
+            </mat-card-content>
+    </mat-card>
+  </div>
+</div>
