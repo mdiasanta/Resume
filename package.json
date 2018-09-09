@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "deploy":"ng build --prod --base-href \"https://mdiasanta.github.io/Resume/\" && npx ngh --dir=dist/Resume",
+    "deploy": "ng build --prod --base-href \"https://mdiasanta.github.io/Resume/\" && npx ngh --dir=dist/Resume",
     "start": "ng serve -o",
     "build": "ng build",
     "test": "ng test",
@@ -24,8 +24,10 @@
     "@angular/platform-browser": "^6.1.0",
     "@angular/platform-browser-dynamic": "^6.1.0",
     "@angular/router": "^6.1.0",
+    "angular-image-slider": "0.0.8",
     "core-js": "^2.5.4",
     "ng2-pdf-viewer": "^5.1.2",
+    "ngx-clipboard": "^11.1.7",
     "rxjs": "^6.0.0",
     "zone.js": "~0.8.26"
   },

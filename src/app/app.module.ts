@@ -23,6 +23,9 @@ import {MatCardModule} from '@angular/material/card';
 import { trigger, style, transition, animate, group }
     from '@angular/animations';
 
+import { ClipboardModule } from 'ngx-clipboard';    
+
+import {MatGridListModule} from '@angular/material/grid-list';
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,6 +48,9 @@ import { trigger, style, transition, animate, group }
     
     HttpClientModule,
     MatTooltipModule,
+    ClipboardModule,
+
+    MatGridListModule,
 
     RouterModule.forRoot([
       { path: '', redirectTo: 'home', pathMatch: 'full' },

@@ -23,7 +23,7 @@
 
 .hero-text1 {
     text-align: center;
-    margin:70px;
+    margin:30px;
     /* position: absolute;
     top: 50%;
     left: 50%;
@@ -35,3 +35,8 @@
   .custom-card{
     opacity: 1;
   }
+
+mat-card-title{
+  text-align: left;
+  font-weight: bold;
+}

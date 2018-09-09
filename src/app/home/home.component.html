@@ -1,33 +1,31 @@
 
 <div class="hero-text">
-  <img src="assets/img/photo.jpg" class="Avatar">
+  <img src="assets/img/photo.jpg" class="Avatar zoom">
+
   <h1>Mark Diasanta</h1>
   <p>Advising Systems Specialist</p>
   
-  <button mat-raised-button color="primary" matTooltip="Please!" (click)="toggleCard()">Hire me</button>
+  <button mat-raised-button color="primary" matTooltip="Please!" (click)="toggleCard()">Contact me</button>
   <div>{{clickMessage}}</div>
 
   <br>
 
-  <div class="fade" *ngIf="visible">   
+  <div *ngIf="visible">
     <mat-card >
-      <!-- <mat-card-img>
-
-      </mat-card-img> -->
       <mat-card-title>
         Contact Informtation
       </mat-card-title>
         <mat-card-subtitle>Email Address</mat-card-subtitle>
           <mat-card-content>
-            markdiasanta@gmail.com
+            <button mat-button matTooltip="Copy Email" matTooltipPosition="right" ngxClipboard [cbContent]="'markdiasanta@gmail.com'">markdiasanta@gmail.com</button>
           </mat-card-content>
         <mat-card-subtitle>Phone Number</mat-card-subtitle>
           <mat-card-content>
-            +1-757-351-5443
+                <button mat-button matTooltip="Copy Phone" matTooltipPosition="right" ngxClipboard [cbContent]="'+1-757-351-5443'">+1-757-351-5443</button>
           </mat-card-content>
           <mat-card-content>
-              Email is the best way to get in touch, so don't be shy!
-            </mat-card-content>
-    </mat-card>
+            Email is the best way to get in touch, so don't be shy!
+          </mat-card-content>
+      </mat-card>  
   </div>
 </div>

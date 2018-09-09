@@ -42,3 +42,14 @@ mat-card-subtitle{
   opacity:1;
   transition: all linear 0.5s;
 }
+
+.zoom {
+  transition: transform .5s;
+  
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
