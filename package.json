@@ -26,6 +26,7 @@
     "@angular/router": "^6.1.0",
     "angular-image-slider": "0.0.8",
     "core-js": "^2.5.4",
+    "ng-simple-slideshow": "^1.2.4",
     "ng2-pdf-viewer": "^5.1.2",
     "ngx-clipboard": "^11.1.7",
     "rxjs": "^6.0.0",

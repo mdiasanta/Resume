@@ -8,19 +8,19 @@
     [opened]="!(isHandset$ | async)">
     <mat-toolbar color="primary">Navigation Menu</mat-toolbar>
     <mat-nav-list>
-        <a mat-list-item routerLink="">
+        <a mat-list-item routerLink="" class="zoom">
           <mat-icon svgIcon="home"></mat-icon>Home
         </a>
-      <a mat-list-item routerLink="/about">
+      <a mat-list-item routerLink="/about" class="zoom">
         <mat-icon svgIcon="account-circle"></mat-icon>About Me
       </a>
-      <a mat-list-item routerLink="/resume" (click)="resumeClick()">
+      <a mat-list-item routerLink="/resume" class="zoom" (click)="resumeClick()">
         <mat-icon svgIcon="briefcase"></mat-icon> Resume
       </a>
-      <a mat-list-item routerLink="/home" (click)="linkedinClick()">
+      <a mat-list-item routerLink="/home" class="zoom" (click)="linkedinClick()">
         <mat-icon svgIcon="linkedin-box"></mat-icon> LinkedIn
       </a>
-      <a mat-list-item routerLink="/home"  (click)="githubClick()">
+      <a mat-list-item routerLink="/home" class="zoom" (click)="githubClick()">
         <mat-icon svgIcon="github-box"></mat-icon> GitHub
       </a>
     </mat-nav-list>

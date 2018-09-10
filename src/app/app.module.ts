@@ -26,6 +26,8 @@ import { trigger, style, transition, animate, group }
 import { ClipboardModule } from 'ngx-clipboard';    
 
 import {MatGridListModule} from '@angular/material/grid-list';
+
+import {SlideshowModule} from 'ng-simple-slideshow';
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,6 +53,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     ClipboardModule,
 
     MatGridListModule,
+
+    SlideshowModule,
 
     RouterModule.forRoot([
       { path: '', redirectTo: 'home', pathMatch: 'full' },
