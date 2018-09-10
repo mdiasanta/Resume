@@ -19,6 +19,7 @@ export class NavbarComponent {
   
     resumeClick(){
       window.open('/assets/Resume.pdf','_blank');
+      //window.open('./Resume/assets/Resume.pdf','_blank');
     }
 
     linkedinClick(){

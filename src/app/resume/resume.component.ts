@@ -17,4 +17,5 @@ export class ResumeComponent implements OnInit {
     
   }
   pdfSrc: string = './assets/Resume.pdf';
+  /* pdfSrc: string = './Resume/assets/Resume.pdf'; */
 }

@@ -40,3 +40,8 @@ mat-card-title{
   text-align: left;
   font-weight: bold;
 }
+
+.cardImage{
+  width: 200px;
+  height: 200px;
+}
