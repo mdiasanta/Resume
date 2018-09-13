@@ -3,20 +3,22 @@
   <slideshow [imageUrls]="imageUrlArray"></slideshow>
 </div> -->
 <div class="hero-text">
+  <div *ngIf="!visible">
   <img src="assets/img/photo.jpg" class="Avatar zoom">
 
   <h1>Mark Diasanta</h1>
   <p>Advising Systems Specialist</p>
   <p>Virginia Beach, VA</p>
+</div>
   
-  
-  <button mat-raised-button color="primary" matTooltip="Please!" (click)="toggleCard()">Contact me</button>
+  <button mat-raised-button color="primary" class="zoom" matTooltip="Please!" (click)="toggleCard()" *ngIf="!visible">Contact me</button>
   <div>{{clickMessage}}</div>
-
+</div>
   <br>
 
   <div *ngIf="visible">
-    <mat-card >
+    <mat-card class="setMargin">
+        <img mat-card-image src="/assets/img/contactInfo.jpg">
       <mat-card-title>
         Contact Informtation
       </mat-card-title>
@@ -28,9 +30,26 @@
           <mat-card-content>
                 <button mat-button matTooltip="Copy Phone" matTooltipPosition="right" ngxClipboard [cbContent]="'+1-757-351-5443'">+1-757-351-5443</button>
           </mat-card-content>
-          <mat-card-subtitle>
-            Email is the best way to get in touch, so don't be shy!
-          </mat-card-subtitle>
-      </mat-card>  
+          <mat-card-content>
+            Email is the best way to get in touch
+          </mat-card-content>
+      </mat-card>
+    
+    <mat-card class="setMargin">
+        <img mat-card-image src="assets/img/webDesign.gif" onerror="this.src='assets/img/developer.jpg'">
+        <!-- <img mat-card-image src="/Resume/assets/img/webDesign.gif" onerror="this.src='/Resume/assets/img/developer.jpg'"> -->
+      <mat-card-title>
+        My website looking a little empty?
+      </mat-card-title>
+      <mat-card-content>
+        This will be an ongoing project to test my skills. I hope to add more features such as Transactual email integration and more visual appeal in the near future.
+      </mat-card-content>
+    </mat-card> 
+    <mat-card class="centerFormat">
+      <mat-card-actions>
+          <button mat-raised-button color="primary" class="zoom" matTooltip="Hide Content" (click)="toggleCard()">Hide</button>
+      </mat-card-actions>
+    </mat-card>
   </div>
-</div>
+
+
