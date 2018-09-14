@@ -28,6 +28,15 @@ import { ClipboardModule } from 'ngx-clipboard';
 import {MatGridListModule} from '@angular/material/grid-list';
 
 import {SlideshowModule} from 'ng-simple-slideshow';
+
+import { HttpClient } from '@angular/common/http';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+
+export function httpLoaderFactory(httpClient: HttpClient): TranslateHttpLoader {
+   return new TranslateHttpLoader(httpClient, './assets/i18n/', '.json');
+}
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,6 +64,14 @@ import {SlideshowModule} from 'ng-simple-slideshow';
     MatGridListModule,
 
     SlideshowModule,
+   //
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: httpLoaderFactory,
+        deps: [HttpClient]
+      }
+    }),
 
     RouterModule.forRoot([
       { path: '', redirectTo: 'home', pathMatch: 'full' },

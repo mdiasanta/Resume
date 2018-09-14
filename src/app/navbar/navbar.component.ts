@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-
+import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -15,7 +15,7 @@ export class NavbarComponent {
       map(result => result.matches)
     );
     
-  constructor(private breakpointObserver: BreakpointObserver) {}
+  constructor(private breakpointObserver: BreakpointObserver, private translate: TranslateService) {}
   
     resumeClick(){
       window.open('/assets/Resume.pdf','_blank');
@@ -29,4 +29,14 @@ export class NavbarComponent {
     githubClick(){
       window.open('https://github.com/mdiasanta','_blank');
     }
+    switchLanguage(language: string) {
+      this.translate.use(language);
+    }
+
+    //Toggle Language button visibility
+    visible=false;
+
+    toggleButton(){
+      this.visible=!this.visible;
+  }
   }

@@ -6,12 +6,12 @@
   <div *ngIf="!visible">
   <img src="assets/img/photo.jpg" class="Avatar zoom">
 
-  <h1>Mark Diasanta</h1>
-  <p>Advising Systems Specialist</p>
-  <p>Virginia Beach, VA</p>
+  <h1>{{ 'home.name' | translate }}</h1>
+  <p>{{ 'home.title' | translate }}</p>
+  <p>{{ 'home.location' | translate }}</p>
 </div>
   
-  <button mat-raised-button color="primary" class="zoom" matTooltip="Please!" (click)="toggleCard()" *ngIf="!visible">Contact me</button>
+  <button mat-raised-button color="primary" class="zoom" matTooltip="{{ 'home.contactMeTool' | translate }}" (click)="toggleCard()" *ngIf="!visible">{{ 'home.contactMe' | translate }}</button>
   <div>{{clickMessage}}</div>
 </div>
   <br>
@@ -20,18 +20,18 @@
     <mat-card class="setMargin">
         <img mat-card-image src="/assets/img/contactInfo.jpg">
       <mat-card-title>
-        Contact Informtation
+        {{ 'home.contactInfo' | translate }}
       </mat-card-title>
-        <mat-card-subtitle>Email Address</mat-card-subtitle>
+        <mat-card-subtitle>{{ 'home.email' | translate }}</mat-card-subtitle>
           <mat-card-content>
             <button mat-button matTooltip="Copy Email" matTooltipPosition="right" ngxClipboard [cbContent]="'markdiasanta@gmail.com'">markdiasanta@gmail.com</button>
           </mat-card-content>
-        <mat-card-subtitle>Phone Number</mat-card-subtitle>
+        <mat-card-subtitle>{{ 'home.phone' | translate }}</mat-card-subtitle>
           <mat-card-content>
                 <button mat-button matTooltip="Copy Phone" matTooltipPosition="right" ngxClipboard [cbContent]="'+1-757-351-5443'">+1-757-351-5443</button>
           </mat-card-content>
           <mat-card-content>
-            Email is the best way to get in touch
+            {{ 'home.emailDesc' | translate }}
           </mat-card-content>
       </mat-card>
     
@@ -39,15 +39,15 @@
         <img mat-card-image src="assets/img/webDesign.gif" onerror="this.src='assets/img/developer.jpg'">
         <!-- <img mat-card-image src="/Resume/assets/img/webDesign.gif" onerror="this.src='/Resume/assets/img/developer.jpg'"> -->
       <mat-card-title>
-        My website looking a little empty?
+        {{ 'home.emptyWeb' | translate }}
       </mat-card-title>
       <mat-card-content>
-        This will be an ongoing project to test my skills. I hope to add more features such as Transactual email integration and more visual appeal in the near future.
+        {{ 'home.emptyWebDesc' | translate }}
       </mat-card-content>
     </mat-card> 
     <mat-card class="centerFormat">
       <mat-card-actions>
-          <button mat-raised-button color="primary" class="zoom" matTooltip="Hide Content" (click)="toggleCard()">Hide</button>
+          <button mat-raised-button color="primary" class="zoom" matTooltip="{{ 'home.hideTool' | translate }}" (click)="toggleCard()">{{ 'home.hide' | translate }}</button>
       </mat-card-actions>
     </mat-card>
   </div>

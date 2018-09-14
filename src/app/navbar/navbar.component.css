@@ -72,3 +72,6 @@ video{
   transform: scale(1.1); 
 }
 
+.fillSpace{
+  flex: 1 1 auto;
+}
