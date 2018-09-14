@@ -18,7 +18,7 @@ export class NavbarComponent {
   constructor(private breakpointObserver: BreakpointObserver, private translate: TranslateService) {}
   
     resumeClick(){
-      window.open('/assets/Resume.pdf','_blank');
+      window.open('assets/Resume.pdf','_blank');
       //window.open('/Resume/assets/Resume.pdf','_blank');
     }
 
