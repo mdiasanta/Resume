@@ -10,7 +10,7 @@
         <img mat-card-image src="assets/img/resume_meme.png">
         <!-- <img mat-card-image src="/Resume/assets/img/resume_meme.png"> -->
         <mat-card-title>
-                <button mat-button matTooltip="Updated Resume" (click)="openResume()">Click Here if my Resume looks Old</button><br><br>
+                <button mat-button matTooltip="{{ 'resume.resumeTool' | translate }}" (click)="openResume()">{{ 'resume.resume' | translate }}</button><br><br>
         </mat-card-title>
     </mat-card>
 </div>
