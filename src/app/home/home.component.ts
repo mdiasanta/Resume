@@ -18,8 +18,4 @@ export class HomeComponent implements OnInit {
 
     this.visible=!this.visible;
   }
-
-  onClickMe() {
-    this.clickMessage = 'Just Kidding, This button does not do anything.';
-  }
 }

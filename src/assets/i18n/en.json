@@ -3,7 +3,9 @@
         "aboutMe":"About Me",
         "aboutMeDescription1":"Hello, my name is Mark.",
         "aboutMeDescription2":"I am an Information Systems Professional with a background in CRM Administration and Software/Web Development.",
-        "aboutMeDescription3":"I currently live in Virginia Beach, Virginia"
+        "aboutMeDescription3":"I currently live in Virginia Beach, Virginia",
+        "aboutMeDescription4":"",
+        "aboutMeDescription5":""
     },
     "interests":{
         "interests":"Interests",
@@ -17,7 +19,10 @@
     },
     "techSkills": {
         "techSkills":"Technical Skills",
-        "techSkillsDesc":"I'm not quite an expert in these languages, but I'm very eager to learn and have had functional experience with the following:"
+        "techSkillsDesc":"I'm not quite an expert in these languages, but I'm very eager to learn and have had functional experience with the following:",
+        "techSkillHeader1":"Software",
+        "techSkillHeader2":"Languages",
+        "techSkillHeader3":"Concepts/Frameworks"
     },
     "home": {
         "name":"Mark Diasanta",
@@ -27,7 +32,9 @@
         "contactMeTool":"Please!",
         "contactInfo":"Contact Information",
         "email":"Email Address",
+        "emailTool":"Copy Email",
         "phone":"Phone Number",
+        "phoneTool":"Copy Phone",
         "emailDesc":"Email is the best way to get in touch",
         "emptyWeb":"My website looking a little empty?",
         "emptyWebDesc":"This will be an ongoing project to test my skills. I hope to add more features such as Transactual email integration and more visual appeal in the near future.",

@@ -24,11 +24,11 @@
       </mat-card-title>
         <mat-card-subtitle>{{ 'home.email' | translate }}</mat-card-subtitle>
           <mat-card-content>
-            <button mat-button matTooltip="Copy Email" matTooltipPosition="right" ngxClipboard [cbContent]="'markdiasanta@gmail.com'">markdiasanta@gmail.com</button>
+            <button mat-button matTooltip="{{ 'home.emailTool' | translate }}" matTooltipPosition="right" ngxClipboard [cbContent]="'markdiasanta@gmail.com'">markdiasanta@gmail.com</button>
           </mat-card-content>
         <mat-card-subtitle>{{ 'home.phone' | translate }}</mat-card-subtitle>
           <mat-card-content>
-                <button mat-button matTooltip="Copy Phone" matTooltipPosition="right" ngxClipboard [cbContent]="'+1-757-351-5443'">+1-757-351-5443</button>
+                <button mat-button matTooltip="{{ 'home.phoneTool' | translate }}" matTooltipPosition="right" ngxClipboard [cbContent]="'+1-757-351-5443'">+1-757-351-5443</button>
           </mat-card-content>
           <mat-card-content>
             {{ 'home.emailDesc' | translate }}
