@@ -48,5 +48,9 @@
         "resume":"Resume",
         "langToolEn":"Set Language to Japanese",
         "langToolJp":"英語に設定"
+    },
+    "resume":{
+        "resume":"Click Here if my Resume looks Old",
+        "resumeTool":"Updated Resume"
     }
 }

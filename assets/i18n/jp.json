@@ -48,6 +48,9 @@
         "resume":"履歴書",
         "langToolEn":"Set Language to Japanese",
         "langToolJp":"英語に設定"
+    },
+    "resume":{
+        "resume":"新しい履歴書はこちらをクリックしてください",
+        "resumeTool":"新しい履歴書"
     }
-
 }
