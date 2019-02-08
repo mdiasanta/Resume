@@ -2,20 +2,20 @@
     "about": {
         "aboutMe":"About Me",
         "aboutMeDescription1":"Hello, my name is Mark.",
-        "aboutMeDescription2":"I am an Information Systems Professional with a background in CRM Administration and Software/Web Development.",
+        "aboutMeDescription2":"I am a Software Engineer in the Aerospace and Defense Industry.",
         "aboutMeDescription3":"I currently live in Virginia Beach, Virginia",
         "aboutMeDescription4":"",
         "aboutMeDescription5":""
     },
     "interests":{
         "interests":"Interests",
-        "interestDescription":"While I do spend a lot of time learning on the job, I relax in my free time by playing video games, watching anime, traveling, and adding performance modifications to my car."
+        "interestDescription":"When I'm not coding, I relax in my free time by playing video games, watching anime, traveling, and adding performance modifications to my car."
     },
     "work": {
         "workExp":"Work Experience",
-        "workExpDesc1":"I am currently a CRM Administrator with 1.5 years of experience in Web Development and Software development.",
-        "workExpDesc2":"While CRM Administration is my core duty, I've taken on development roles to extend our organization's CRM functionality. I've developed Web resources, Libraries, Console applications, and assisted in supporting our internal Angular Application which all aid in our organization's productivity.",
-        "workExpDesc3":"I take pleasure in seeing how my code can streamline a user's work experience. It's rewarding to see how a bit of automation and visual appeal can make an impact on the user's workday. I enjoy problem solving from both the Administration and the Developer side of things."
+        "workExpDesc1":"I am a Software Engineer with experience developing Enterprise Defense Applications.",
+        "workExpDesc2":"I continue to grow my skills everyday and hope to develop expertise on Machine learning and Data Analytics.",
+        "workExpDesc3":""
     },
     "techSkills": {
         "techSkills":"Technical Skills",
@@ -26,7 +26,7 @@
     },
     "home": {
         "name":"Mark Diasanta",
-        "title":"Advising Systems Specialist",
+        "title":"Software Engineer",
         "location":"Virginia Beach, Virginia",
         "contactMe":"Contact Me",
         "contactMeTool":"Please!",
@@ -50,7 +50,7 @@
         "langToolJp":"英語に設定"
     },
     "resume":{
-        "resume":"Click Here if my Resume looks Old",
+        "resume":"Click Here for an Updated Resume",
         "resumeTool":"Updated Resume"
     }
 }
