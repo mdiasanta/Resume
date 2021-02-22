@@ -1,6 +1,6 @@
 <template>
-  <v-app style="background-color:#505251; height:100%;">
-    <v-app-bar app color="#3F51B5" dark>
+  <v-app style="background-image: linear-gradient(#3F51B5,#505251);">
+    <v-app-bar app flat color="#3F51B5" dark>
       <v-app-bar-title>
         <div class="d-flex align-center">
           <v-img
