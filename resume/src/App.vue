@@ -1,5 +1,5 @@
 <template>
-  <v-app style="background-color:#505251;">
+  <v-app style="background-color:#505251; height:100%;">
     <v-app-bar app color="#3F51B5" dark>
       <v-app-bar-title>
         <div class="d-flex align-center">
@@ -35,7 +35,7 @@
       </v-tooltip>
       <v-tooltip bottom>
         <template v-slot:activator="{ on }">
-          <v-btn text v-on="on">
+          <v-btn text href="https://resume.creddle.io/resume/el3x9rfvib7" target="_blank" v-on="on">
             <v-icon>fa-briefcase</v-icon>
           </v-btn>
         </template>
@@ -43,7 +43,12 @@
       </v-tooltip>
       <v-tooltip bottom>
         <template v-slot:activator="{ on }">
-          <v-btn text v-on="on">
+          <v-btn
+            text
+            href="https://www.linkedin.com/in/mark-diasanta-42ab68130/"
+            target="_blank"
+            v-on="on"
+          >
             <v-icon>fab fa-linkedin</v-icon>
           </v-btn>
         </template>
@@ -51,7 +56,7 @@
       </v-tooltip>
       <v-tooltip bottom>
         <template v-slot:activator="{ on }">
-          <v-btn text v-on="on">
+          <v-btn text href="https://github.com/mdiasanta" target="_blank" v-on="on">
             <v-icon>fab fa-github</v-icon>
           </v-btn>
         </template>
@@ -59,7 +64,7 @@
       </v-tooltip>
       <v-tooltip bottom>
         <template v-slot:activator="{ on }">
-          <v-btn text v-on="on">
+          <v-btn text tile v-on="on">
             <v-icon>fa-language</v-icon>
           </v-btn>
         </template>
@@ -74,10 +79,10 @@
 </template>
 
 <script>
-import Profile from '@/components/Profile';
+import Profile from "@/components/Profile";
 
 export default {
-  name: 'App',
+  name: "App",
 
   components: {
     Profile
@@ -88,3 +93,8 @@ export default {
   })
 };
 </script>
+<style>
+html {
+  overflow-y: auto;
+}
+</style>
