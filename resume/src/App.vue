@@ -3,8 +3,8 @@
     <v-app-bar app flat style="background-color:transparent;" dark>
       <v-app-bar-title>
         <v-btn
-          flat
-          color="transparent"
+          text
+          dark
           class="d-flex align-center"
           @click="currentComponent = 'profile'"
         >
