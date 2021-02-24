@@ -1,7 +1,7 @@
 <template>
   <v-card flat dark style="background-color:transparent;">
     <v-row no-gutters align="center">
-      <v-col cols="12">
+      <v-col cols="12" align="center">
         <v-img
           contain
           :src="require('@/assets/img/photo.jpg')"
