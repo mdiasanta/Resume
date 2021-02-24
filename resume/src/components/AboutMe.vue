@@ -1,18 +1,20 @@
 <template>
   <v-row no-gutters>
-    <v-col lg='6' md='12' sm="12" class="pa-2">
+    <v-col lg="6" md="12" sm="12" class="pa-2">
       <v-card>
-
         <v-card-title>
           About Me
         </v-card-title>
         <v-card-text>
-          My name is Mark. I am a Software Engineer with about {{getWorkExperience()}} years of experience. <br/> 
-          I specialize in the .NET Core tech stack with Vue.js front end creating highly reactive Single Page Applications for consuming and visualizing data.
+          My name is Mark. I am a Software Engineer with about
+          {{ getWorkExperience() }} years of experience. <br />
+          I specialize in the .NET Core tech stack with Vue.js front end
+          creating highly reactive Single Page Applications for consuming and
+          visualizing data.
         </v-card-text>
       </v-card>
     </v-col>
-    <v-col lg='6' md='12' sm="12" class="pa-2">
+    <v-col lg="6" md="12" sm="12" class="pa-2">
       <v-card>
         <v-img
           contain
@@ -23,11 +25,13 @@
           Interests
         </v-card-title>
         <v-card-text>
-          When I'm not coding, I relax in my free time by playing video games, watching anime, traveling, and adding performance modifications to my car.
+          When I'm not coding, I relax in my free time by playing video games,
+          watching anime, traveling, and adding performance modifications to my
+          car.
         </v-card-text>
       </v-card>
     </v-col>
-    <v-col lg='6' md='12' sm="12" class="pa-2">
+    <v-col lg="6" md="12" sm="12" class="pa-2">
       <v-card>
         <v-img
           contain
@@ -38,9 +42,13 @@
           Technical Skills
         </v-card-title>
         <v-card-text>
-          I'm highly comefortable with the cross platform .NET Core tech stack using VueJS as the front end framework and Microsoft SQL Server. <br/>
-          I've experimented with Docker containers for portable deployments, Python for Machine learning, and MongoDB for NoSQL alternative. <br/>
-          I haven't used these technologies regularly but I also have experience with PHP, C++, and Angular framework.
+          I'm highly comefortable with the cross platform .NET Core tech stack
+          using VueJS as the front end framework and Microsoft SQL Server.
+          <br />
+          I've experimented with Docker containers for portable deployments,
+          Python for Machine learning, and MongoDB for NoSQL alternative. <br />
+          I haven't used these technologies regularly but I also have experience
+          with PHP, C++, and Angular framework.
         </v-card-text>
       </v-card>
     </v-col>
@@ -50,15 +58,14 @@
 <script>
 export default {
   name: 'AboutMe',
-  data: () => ({
-  }),
+  data: () => ({}),
   methods: {
     getWorkExperience() {
-      const startDate = new Date('2018-11-05')
-      const currentDate = new Date()
-      return currentDate.getFullYear() - startDate.getFullYear()
+      const startDate = new Date('2018-11-05');
+      const currentDate = new Date();
+      return currentDate.getFullYear() - startDate.getFullYear();
     }
-  },
+  }
 };
 </script>
 <style scoped></style>

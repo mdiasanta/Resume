@@ -2,7 +2,12 @@
   <v-app style="background-image: linear-gradient(#3F51B5,#505251);">
     <v-app-bar app flat style="background-color:transparent;" dark>
       <v-app-bar-title>
-        <v-btn flat color="transparent" class="d-flex align-center" @click="currentComponent='profile'">
+        <v-btn
+          flat
+          color="transparent"
+          class="d-flex align-center"
+          @click="currentComponent = 'profile'"
+        >
           <v-img
             alt="Vuetify Logo"
             class="shrink mr-2"
@@ -19,7 +24,7 @@
 
       <v-tooltip bottom>
         <template v-slot:activator="{ on }">
-          <v-btn text v-on="on" @click="currentComponent='profile'">
+          <v-btn text v-on="on" @click="currentComponent = 'profile'">
             <v-icon>fa-home</v-icon>
           </v-btn>
         </template>
@@ -27,7 +32,7 @@
       </v-tooltip>
       <v-tooltip bottom>
         <template v-slot:activator="{ on }">
-          <v-btn text v-on="on" @click="currentComponent='AboutMe'">
+          <v-btn text v-on="on" @click="currentComponent = 'AboutMe'">
             <v-icon>fa-user-circle</v-icon>
           </v-btn>
         </template>
@@ -86,7 +91,7 @@
         <v-row no-gutters>
           <v-col>
             <v-scale-transition>
-              <component :is="currentComponent"/>
+              <component :is="currentComponent" />
             </v-scale-transition>
           </v-col>
         </v-row>
