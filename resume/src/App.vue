@@ -1,6 +1,15 @@
 <template>
   <v-app style="background-image: linear-gradient(#3F51B5,#505251);">
-    <v-app-bar app flat style="background-color:transparent;" dark>
+    <v-app-bar
+      app
+      flat
+      :style="{
+        'background-color': isTransparent
+          ? 'transparent'
+          : 'rgb(63, 81, 180,.90)'
+      }"
+      dark
+    >
       <v-app-bar-title>
         <v-btn
           text
@@ -111,12 +120,31 @@ export default {
     Profile,
     AboutMe
   },
+  created() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+      var app = document.documentElement;
 
+      if (app.scrollTop > 0) {
+        this.isTransparent = false;
+      } else {
+        this.isTransparent = true;
+      }
+    }
+  },
   data: () => ({
-    currentComponent: 'profile'
+    currentComponent: 'profile',
+    isTransparent: true
   })
 };
 </script>
+<style scoped>
+.transparent {
+  background-color: transparent;
+}
+</style>
 <style>
 html {
   overflow-y: auto;
