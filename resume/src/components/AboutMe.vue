@@ -17,7 +17,7 @@
       <v-card>
         <v-img
           contain
-          :src="require('@/assets/img/s2k.gif')"
+          :src="require('@/assets/img/S2k.gif')"
           transition="scale-transition"
         />
         <v-card-title>
