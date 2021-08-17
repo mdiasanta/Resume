@@ -8,11 +8,8 @@
         <v-card-text>
           My name is Mark. I am a Software Engineer with about
           {{ getWorkExperience() }} years of experience. <br />
-          I specialize in the .NET Core tech stack creating highly distributable
-          web services utilizing Vue.js front end creating highly reactive
-          Single Page Applications for consuming and visualizing data. I take
-          interest in improving code execution and mimimizing build sizes to
-          deliver powerful products with minimal footprints.
+          I specialize in a tech stack consisting of .NET Core, Vue.js, and MSSQL. I take
+          interest in optimizing performance of code execution and simplifying complex code for easier maintainability.
         </v-card-text>
       </v-card>
     </v-col>
@@ -49,8 +46,8 @@
           <br />
           I've experimented with Docker containers for portable deployments,
           Python for Machine learning, and MongoDB for NoSQL alternative. <br />
-          I haven't used these technologies regularly but I also have experience
-          with PHP, C++, and Angular framework.
+          My main focus has been on rewriting legacy applications into modern SPA applications and breaking apart enterprise level monolithic systems and refactoring them
+          into microservices to be more reusable and less tightly coupled to specific applications. 
         </v-card-text>
       </v-card>
     </v-col>
@@ -122,8 +119,8 @@ export default {
         { name: 'Javascript' },
         { name: 'SQL' },
         { name: 'C#' },
-        { name: 'C++ (To a lesser extent)' },
-        { name: 'Python (To a lesser extent)' },
+        { name: 'C++' },
+        { name: 'Python' },
         { name: 'Powershell' }
       ],
       concepts: [

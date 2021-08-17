@@ -20,7 +20,7 @@
               >Software Engineer</v-list-item-subtitle
             >
             <v-list-item-subtitle class="subtitle-2"
-              >Virginia Beach</v-list-item-subtitle
+              >Virginia Beach,VA</v-list-item-subtitle
             >
           </v-list-item-content>
         </v-list-item>
