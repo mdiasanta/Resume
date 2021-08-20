@@ -2,6 +2,11 @@
   <v-row no-gutters>
     <v-col lg="6" md="6" sm="12" class="pa-2">
       <v-card>
+                <v-img
+          contain
+          :src="require('@/assets/img/hacker.gif')"
+          transition="scale-transition"
+        />
         <v-card-title>
           About Me
         </v-card-title>
@@ -17,7 +22,7 @@
       <v-card>
         <v-img
           contain
-          :src="require('@/assets/img/S2k.gif')"
+          :src="require('@/assets/img/s2k.gif')"
           transition="scale-transition"
         />
         <v-card-title>
