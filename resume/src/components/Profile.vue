@@ -4,7 +4,7 @@
       <v-col cols="12" align="center">
         <v-img
           contain
-          :src="require('@/assets/img/photo.jpg')"
+          :src="require('@/assets/img/photo2.jpg')"
           transition="scale-transition"
           width="25%"
           class="img-border"

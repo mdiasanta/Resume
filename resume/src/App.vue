@@ -148,5 +148,6 @@ export default {
 <style>
 html {
   overflow-y: auto;
+  width: 100%;
 }
 </style>

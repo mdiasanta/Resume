@@ -4,12 +4,12 @@ module.exports = {
   productionSourceMap: false,
   transpileDependencies: ['vuetify'],
   pluginOptions: {
-    compression:{
+    compression: {
       gzip: {
         filename: '[file].gz[query]',
         algorithm: 'gzip',
         include: /\.(js|css|html|svg|json)(\?.*)?$/i,
-        minRatio: 0.8,
+        minRatio: 0.8
       }
     }
   }

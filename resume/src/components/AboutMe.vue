@@ -1,8 +1,8 @@
 <template>
   <v-row no-gutters>
-    <v-col lg="6" md="6" sm="12" class="pa-2">
+    <v-col lg="6" md="12" sm="12" class="pa-2">
       <v-card>
-                <v-img
+        <v-img
           contain
           :src="require('@/assets/img/hacker.gif')"
           transition="scale-transition"
@@ -13,12 +13,13 @@
         <v-card-text>
           My name is Mark. I am a Software Engineer with about
           {{ getWorkExperience() }} years of experience. <br />
-          I specialize in a tech stack consisting of .NET Core, Vue.js, and MSSQL. I take
-          interest in optimizing performance of code execution and simplifying complex code for easier maintainability.
+          I specialize in a tech stack consisting of .NET Core, Vue.js, and
+          MSSQL. I take interest in optimizing performance of code execution and
+          simplifying complex code for easier maintainability.
         </v-card-text>
       </v-card>
     </v-col>
-    <v-col lg="6" md="6" sm="12" class="pa-2">
+    <v-col lg="6" md="12" sm="12" class="pa-2">
       <v-card>
         <v-img
           contain
@@ -35,11 +36,11 @@
         </v-card-text>
       </v-card>
     </v-col>
-    <v-col lg="6" md="6" sm="12" class="pa-2">
+    <v-col lg="6" md="12" sm="12" class="pa-2">
       <v-card>
         <v-img
           contain
-          :src="require('@/assets/img/bugFix.gif')"
+          :src="require('@/assets/img/bugfix.gif')"
           transition="scale-transition"
         />
         <v-card-title>
@@ -51,12 +52,14 @@
           <br />
           I've experimented with Docker containers for portable deployments,
           Python for Machine learning, and MongoDB for NoSQL alternative. <br />
-          My main focus has been on rewriting legacy applications into modern SPA applications and breaking apart enterprise level monolithic systems and refactoring them
-          into microservices to be more reusable and less tightly coupled to specific applications. 
+          My main focus has been on rewriting legacy applications into modern
+          SPA applications and breaking apart enterprise level monolithic
+          systems and refactoring them into microservices to be more reusable
+          and less tightly coupled to specific applications.
         </v-card-text>
       </v-card>
     </v-col>
-    <v-col lg="6" md="6" sm="12" class="pa-2">
+    <v-col lg="6" md="12" sm="12" class="pa-2">
       <v-card>
         <v-img
           contain
