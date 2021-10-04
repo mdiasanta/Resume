@@ -1,5 +1,5 @@
 <template>
-  <v-row no-gutters>
+  <v-row id="aboutMe" class="pr-4" no-gutters>
     <v-col lg="6" md="12" sm="12" class="pa-2">
       <v-card>
         <v-img
@@ -23,7 +23,7 @@
       <v-card>
         <v-img
           contain
-          :src="require('@/assets/img/s2k.gif')"
+          :src="require('@/assets/img/S2k.gif')"
           transition="scale-transition"
         />
         <v-card-title>
@@ -40,7 +40,7 @@
       <v-card>
         <v-img
           contain
-          :src="require('@/assets/img/bugfix.gif')"
+          :src="require('@/assets/img/bugFix.gif')"
           transition="scale-transition"
         />
         <v-card-title>

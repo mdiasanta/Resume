@@ -15,16 +15,8 @@
           text
           dark
           class="d-flex align-center"
-          @click="currentComponent = 'profile'"
+          @click="scrollTo('profile')"
         >
-          <v-img
-            alt="Vuetify Logo"
-            class="shrink mr-2"
-            contain
-            :src="require('@/assets/img/bape.png')"
-            transition="scale-transition"
-            width="40"
-          />
           <span class="headline">Mark Diasanta</span>
         </v-btn>
       </v-app-bar-title>
@@ -33,7 +25,7 @@
 
       <v-tooltip bottom>
         <template v-slot:activator="{ on }">
-          <v-btn text v-on="on" @click="currentComponent = 'profile'">
+          <v-btn text v-on="on" @click="scrollTo('profile')">
             <v-icon>fa-home</v-icon>
           </v-btn>
         </template>
@@ -41,7 +33,7 @@
       </v-tooltip>
       <v-tooltip bottom>
         <template v-slot:activator="{ on }">
-          <v-btn text v-on="on" @click="currentComponent = 'AboutMe'">
+          <v-btn text v-on="on" @click="scrollTo('aboutMe')">
             <v-icon>fa-user-circle</v-icon>
           </v-btn>
         </template>
@@ -99,9 +91,10 @@
       <v-container fluid class="fill-height">
         <v-row no-gutters>
           <v-col>
-            <v-scale-transition>
-              <component :is="currentComponent" />
-            </v-scale-transition>
+            <profile class="profile" />
+          </v-col>
+          <v-col>
+            <about-me />
           </v-col>
         </v-row>
       </v-container>
@@ -124,6 +117,10 @@ export default {
     window.addEventListener('scroll', this.handleScroll);
   },
   methods: {
+    scrollTo(id) {
+      const section = document.getElementById(id);
+      this.$vuetify.goTo(section);
+    },
     handleScroll() {
       var app = document.documentElement;
 
@@ -135,7 +132,6 @@ export default {
     }
   },
   data: () => ({
-    currentComponent: 'profile',
     isTransparent: true
   })
 };
@@ -143,6 +139,9 @@ export default {
 <style scoped>
 .transparent {
   background-color: transparent;
+}
+.profile {
+  height: 100vh;
 }
 </style>
 <style>

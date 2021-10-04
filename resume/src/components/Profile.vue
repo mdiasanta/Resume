@@ -1,5 +1,5 @@
 <template>
-  <v-card flat dark style="background-color:transparent;">
+  <v-card id="profile" flat style="background-color:transparent;">
     <v-row no-gutters align="center">
       <v-col cols="12" align="center">
         <v-img
@@ -13,26 +13,32 @@
       <v-col cols="12">
         <v-list-item>
           <v-list-item-content class="text-center">
-            <v-list-item-title class="display-1"
+            <v-list-item-title class="display-1 white--text"
               >Mark Diasanta</v-list-item-title
             >
-            <v-list-item-subtitle class="subtitle-1"
-              >Software Engineer</v-list-item-subtitle
+            <v-list-item-subtitle class="subtitle-1 white--text"
+              >Full Stack Software Engineer</v-list-item-subtitle
             >
-            <v-list-item-subtitle class="subtitle-2"
+            <v-list-item-subtitle class="subtitle-2 white--text"
               >Virginia Beach,VA</v-list-item-subtitle
             >
           </v-list-item-content>
         </v-list-item>
+      </v-col>
+      <v-col cols="12">
+        <cat-facts />
       </v-col>
     </v-row>
   </v-card>
 </template>
 
 <script>
+import CatFacts from '@/components/CatFacts';
 export default {
   name: 'Profile',
-
+  components: {
+    CatFacts
+  },
   data: () => ({})
 };
 </script>
